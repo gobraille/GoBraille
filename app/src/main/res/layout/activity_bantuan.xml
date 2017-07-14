@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bantuan"
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp"
+    android:background="#4E5A62"
+    tools:context="com.example.gobraille.gobraille.bantuan">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+    <TextView
+        android:text="BANTUAN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/bantuan" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bantuan_back"
+        android:textSize="18dp"
+        android:text="&#10003; SWAP LAYAR\n
+digunakan untuk memilih menu.\n\n
+&#10003; BELAJAR\n
+mengenal huruf secara berurutan.\n\n
+&#10003; TENTANG KAMI\n
+Mengetahui pembuat aplikasi.\n\n
+&#10003; BANTUAN\n
+Mengetahui bagaimanaca cara
+menggunakan aplikasi.\n\n
+&#10003; KELUAR\n
+Untuk keluar dari aplikasi ini."
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="30dp"
+        android:background="#6B7D87"/>
+
+        </ScrollView>
+    </android.support.v7.widget.LinearLayoutCompat>
+</RelativeLayout>

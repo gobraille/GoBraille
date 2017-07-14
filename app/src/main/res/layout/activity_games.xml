@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_games"
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#4E5A62"
+    android:screenOrientation="userLandscape"
+    tools:context="com.example.gobraille.gobraille.games">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="6dp"
+                app:cb_color="#303030"
+                app:cb_pressedRingWidth="8dp"
+                android:src="@drawable/ic_dot_white"
+                android:id="@+id/dot1"/>
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="6dp"
+                app:cb_color="#303030"
+                app:cb_pressedRingWidth="8dp"
+                android:src="@drawable/ic_dot_white"
+                android:id="@+id/dot2"/>
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="6dp"
+                app:cb_color="#303030"
+                app:cb_pressedRingWidth="8dp"
+                android:src="@drawable/ic_dot_white"
+                android:id="@+id/dot3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="130dp"
+                android:text="A"
+                android:id="@+id/character"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:background="@drawable/circle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="6dp"
+                app:cb_color="#303030"
+                app:cb_pressedRingWidth="8dp"
+                android:src="@drawable/ic_dot_blue"
+                android:id="@+id/dot4"/>
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="6dp"
+                app:cb_color="#303030"
+                app:cb_pressedRingWidth="8dp"
+                android:src="@drawable/ic_dot_blue"
+                android:id="@+id/dot5"/>
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="6dp"
+                app:cb_color="#303030"
+                app:cb_pressedRingWidth="8dp"
+                android:src="@drawable/ic_dot_blue"
+                android:id="@+id/dot6"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#4E5A62"
+    tools:context="com.example.gobraille.gobraille.MainActivity$PlaceholderFragment"
+    android:rotationY="180">
+
+        <at.markushi.ui.CircleButton
+            app:cb_color="#303030"
+            app:cb_pressedRingWidth="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:id="@+id/imageMenu"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textMenu"
+            android:text="textMenu"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:background="#6B7D87"
+            android:layout_below="@id/imageMenu"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
